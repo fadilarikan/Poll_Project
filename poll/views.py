@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 
 from .forms import CreatePollForm
@@ -55,4 +55,9 @@ def results(request,poll_id):
         'poll': poll
     }
     return render(request,'poll/results.html', context)
+
+def delete(request,id):
+    question = Poll.objects.get(id=id)
+    question.delete()
+    return redirect('home')
 # Create your views here.
