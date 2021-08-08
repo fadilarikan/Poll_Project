@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-71e)v!l0r^htx!_u2-i6@h4bs@4g#lkdr^djkwfwob)sjoiq8y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fadilarikan-poll-project.herokuapp.com']
 
 
 # Application definition
